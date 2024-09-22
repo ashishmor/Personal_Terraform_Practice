@@ -16,3 +16,8 @@ provider "aws" {
 resource "aws_vpc" "example" {
   cidr_block = "10.0.0.0/16"
 }
+
+resource "aws_instance" "this" {
+  ami                     = "ami-0dcc1e21636832c5d"
+  instance_type           = "m5.large"
+}
