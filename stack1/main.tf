@@ -30,7 +30,7 @@ resource "aws_vpc" "example" {
   }
 }
 
-resource "aws_s3_bucket_versioning" "terraform_backend" {
+resource "aws_s3_bucket" "terraform_backend" {
   bucket = "tfstate-storage-myproject"  # Replace with your desired bucket name
                   
 versioning {
