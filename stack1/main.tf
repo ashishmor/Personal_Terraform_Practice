@@ -5,12 +5,12 @@ terraform {
       version = "~> 4.0"
     }
   }
-  backend "s3" {
-    bucket         = "tfstate-storage-myproject"  # Replace with your chosen bucket name
-    key            = "stack1/terraform.tfstate"            # The state file name
-    region         = "us-east-1"                    # Replace with your desired AWS region
-    encrypt        = true                            # Optional: Enable encryption
-  }
+  # backend "s3" {
+  #   bucket         = "tfstate-storage-myproject"  # Replace with your chosen bucket name
+  #   key            = "stack1/terraform.tfstate"            # The state file name
+  #   region         = "us-east-1"                    # Replace with your desired AWS region
+  #   encrypt        = true                            # Optional: Enable encryption
+  # }
   } 
 # Configure the AWS Provider
 provider "aws" {
